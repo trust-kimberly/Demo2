@@ -7,7 +7,6 @@
     <title>JACK HALLENBECK</title>
   </head>
   <body>
-  <script type="text/javascript" src=./script.js></script>
 
     <div class="header">
       <img src="./Media/helvetica.png" alt="JACK HALLENBECK">
@@ -18,21 +17,40 @@
 
     <div data-aos="fade-up"
      data-aos-duration="3000" class="selectedWorks">
-      <h2>Selected Works</h2>
-      <h3>Maggie Rogers</h3>
-        <p>“Say It” from <em>Heard It In A Past Life</em> (2019) - producer, songwriter, engineer<br>“Color Song” from <em>Now That The Light Is Fading</em> (2017) - mixer</p>
-      <h3>Topaz Jones</h3>
-        <p>“Nectar” (2018) - producer, songwriter, engineer, mixer<br>“Zoom” (2018) - producer, songwriter, engineer, mixer</p>
-      <h3>Scott James</h3>
-        <p>“Bridge Vision” (2019) - producer, songwriter, engineer, mixer<br>“w” (2019) - producer, engineer, mixer
-        <br>“Ballet” (2019) - producer, songwriter, engineer, mixer
-        <br>“Voice of Dog” (2017) - producer, songwriter, engineer, mixer
-        <br>“Belvedere” from <em>Shelter Island Heights</em> (2017) - producer, songwriter, engineer, mixer
-        <br>“Park Music” from <em>Shelter Island Heights</em> (2017) - producer, engineer, mixer</p>
+
+      <button type="button" class="collapsibleM">Maggie Rogers</button>
+        <div class="content">
+          <p>Say It  /  <em>Heard It In A Past Life</em> (2019)  -  producer, songwriter, engineer
+          <br>
+          Color Song  /  <em>Now That The Light Is Fading</em> (2017)  -  mixer</p>
+        </div>
+
+      <button type="button" class="collapsibleT">Topaz Jones</button>
+          <div class="content">
+          <p>“Nectar” (2018) - producer, songwriter, engineer, mixer
+          <br>
+          “Zoom” (2018) - producer, songwriter, engineer, mixer</p>
+          </div>
+
+      <button type="button" class="collapsibleS">Scott James</button>
+          <div class="content">
+            <p>Bridge Vision (2019) - producer, songwriter, engineer, mixer
+            <br>
+            W (2019) - producer, engineer, mixer
+            <br>
+            Ballet (2019) - producer, songwriter, engineer, mixer
+            <br>
+            Voice of Dog (2017) - producer, songwriter, engineer, mixer
+            <br>
+            Belvedere - <em>Shelter Island Heights</em> (2017) - producer, songwriter, engineer, mixer
+            <br>
+            Park Music - <em>Shelter Island Heights</em> (2017) - producer, engineer, mixer</p>
+              </div>
+
     </div>
 
     <div class="contact">
-      <button class="button"><a href="mailto:jackhallenbeck@gmail.com"></a>Contact</button>
+      <button id="contact"><a href="mailto:jackhallenbeck@gmail.com"></a>Contact</button>
     </div>
 
 
@@ -41,6 +59,9 @@
     <script>
     AOS.init();
     </script>
+
+    <script type="text/javascript" src=./script.js></script>
+
 
   </body>
 </html>

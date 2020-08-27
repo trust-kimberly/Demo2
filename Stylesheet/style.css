@@ -1,7 +1,8 @@
 .header {
   margin: 50px;
+  padding-bottom: 5vh;
   width: 80vw;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -13,7 +14,7 @@ img {
 }
 
 .selectedWorks {
-  margin: 50px;
+  margin-left: 50px;
   display: block;
   position: absolute;
   margin-top: 20vh;
@@ -30,29 +31,95 @@ h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
   padding-bottom: 15px;
-  line-height: 1.4;
+  line-height: 1.75;
 }
 
-button {
+#contact {
   position: fixed;
   margin-top: 80vh;
   margin-left: 70vw;
   background-color: white;
-   border: box;
-   color: black;
-   padding: 15px 32px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 20px;
-   transition-duration: 0.4s;
+  border: box;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  transition-duration: 0.4s;
+}
 
+.button {
+  background-color: transparent;
 }
 
 .button:hover {
-  background-color: SlateGray;
-  color: white;
   cursor: pointer;
+  background-color: transparent;
+}
+
+
+.collapsibleM {
+  height: 15vh;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+}
+
+.collapsibleT {
+  height: 15vh;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+}
+
+.collapsibleS {
+  height: 15vh;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsibleM:hover {
+  color: blue;
+  background-color: transparent;
+}
+
+.active, .collapsibleT:hover {
+  color: blue;
+  font-style: italic;
+  background-color: transparent;
+}
+
+.active, .collapsibleS:hover {
+  font-style: italic;
+  background-color: transparent;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 5px;
+  line-height:
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
