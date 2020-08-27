@@ -143,7 +143,7 @@ p {
   font-family: serif;
 }
 
-.active, .collapsibleK:hover {
+.collapsibleK:hover {
   font-size: 35px;
 }
 /* Style the collapsible content. Note: hidden by default */
