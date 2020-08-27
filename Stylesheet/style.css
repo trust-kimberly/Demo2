@@ -97,6 +97,30 @@ p {
   background-color: transparent;
 }
 
+.collapsibleHaim {
+  height: 15vh;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+}
+
+.collapsibleK {
+  height: 15vh;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: transparent;
+}
+
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsibleM:hover {
   color: blue;
@@ -112,8 +136,16 @@ p {
 .active, .collapsibleS:hover {
   font-style: italic;
   background-color: transparent;
+  color: black;
 }
 
+.collapsibleHaim:hover {
+  font-family: serif;
+}
+
+.active, .collapsibleK:hover {
+  font-size: 35px;
+}
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 5px;
