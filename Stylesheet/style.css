@@ -157,8 +157,12 @@ p {
 }
 
 .collapsibleK:hover {
+<<<<<<< HEAD
   color: #2d862d;
   background-color: transparent;
+=======
+  font-size: 35px;
+>>>>>>> f3ca5d36c37cc76824b81da02f61554ca690ea8a
 }
 /* Style the collapsible content. Note: hidden by default */
 .content {
