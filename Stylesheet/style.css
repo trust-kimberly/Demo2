@@ -1,7 +1,7 @@
 .header {
   margin: 50px;
-  padding-bottom: 5vh;
-  width: 80vw;
+  padding-bottom: 10vh;
+  width: 70vw;
   display: block;
   justify-content: center;
   align-items: center;
@@ -18,22 +18,25 @@ img {
   display: block;
   position: absolute;
   margin-top: 20vh;
-  font-family: helvetica;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 h2 {
   font-size: 30px;
   padding-bottom: 15px;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 h3 {
   font-size: 20px;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 p {
   font-size: 18px;
   padding-bottom: 15px;
   line-height: 1.75;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 #contact {
@@ -71,6 +74,7 @@ p {
   text-align: left;
   outline: none;
   background-color: transparent;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 .collapsibleT {
@@ -83,6 +87,7 @@ p {
   text-align: left;
   outline: none;
   background-color: transparent;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 .collapsibleS {
@@ -95,6 +100,7 @@ p {
   text-align: left;
   outline: none;
   background-color: transparent;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 .collapsibleHaim {
@@ -107,6 +113,7 @@ p {
   text-align: left;
   outline: none;
   background-color: transparent;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 .collapsibleK {
@@ -119,32 +126,39 @@ p {
   text-align: left;
   outline: none;
   background-color: transparent;
+  font-family: 'IM Fell DW Pica', serif;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsibleM:hover {
-  color: blue;
-  background-color: transparent;
-}
-
-.active, .collapsibleT:hover {
-  color: blue;
+.active {
+  color: #9fdf9f;
   font-style: italic;
   background-color: transparent;
 }
 
-.active, .collapsibleS:hover {
-  font-style: italic;
+.collapsibleM:hover {
+  color: #9fdf9f;
   background-color: transparent;
-  color: black;
+}
+
+.collapsibleT:hover {
+  color: #79d279;
+  background-color: transparent;
+}
+
+.collapsibleS:hover {
+  color: #53c653;
+  background-color: transparent;
 }
 
 .collapsibleHaim:hover {
-  font-family: serif;
+  color: #39ac39;
+  background-color: transparent;
 }
 
-.active, .collapsibleK:hover {
-  font-size: 35px;
+.collapsibleK:hover {
+  color: #2d862d;
+  background-color: transparent;
 }
 /* Style the collapsible content. Note: hidden by default */
 .content {
