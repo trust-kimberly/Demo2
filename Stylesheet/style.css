@@ -1,20 +1,46 @@
+.left {
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+.right {
+        -moz-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+#bee {
+  transition: transform .1s
+  max-height: 10%
+  max-width: 10%;
+  z-index: 100;
+}
+
 .header {
-  margin: 50px;
-  padding-bottom: 10vh;
-  width: 70vw;
+  max-height: 20vh;
   display: block;
   justify-content: center;
   align-items: center;
   position: fixed;
+  background-color: white;
+  z-index: 5;
+  top: 0;
 }
 
-img {
+#jack {
   width: 80vw;
-  z-index: -1;
+  height: auto;
+  object-fit: contain;
+  padding: 8vh 10vw;
 }
 
 .selectedWorks {
-  margin-left: 50px;
+  padding-left: 10vw;
   display: block;
   position: absolute;
   margin-top: 20vh;
@@ -39,10 +65,18 @@ p {
   font-family: 'IM Fell DW Pica', serif;
 }
 
-#contact {
-  position: fixed;
-  margin-top: 80vh;
-  margin-left: 70vw;
+.contact-container {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 15vw;
+  margin-top: 85vh;
+  margin-left: 75vw;
+  margin-right: 10vw;
+}
+
+button.contact {
   background-color: white;
   border: box;
   color: black;
@@ -51,11 +85,17 @@ p {
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  transition-duration: 0.4s;
+}
+
+button.contact:hover {
+  background-color: aliceblue;
+  color: blue;
+  cursor: pointer;
 }
 
 .button {
   background-color: transparent;
+  transition-duration: all 1s ease-in-out
 }
 
 .button:hover {
@@ -63,6 +103,67 @@ p {
   background-color: transparent;
 }
 
+#sayItHidden {
+  width: 20vw;
+  height: 20vw;
+  display: none;
+  position: absolute;
+  padding-left: 60vw;
+  padding-right: 10vw;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#sayIt:hover + #sayItHidden {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+}
+
+#colorSongHidden {
+  width: 20vw;
+  height: 20vw;
+  display: none;
+  position: absolute;
+  padding-left: 60vw;
+  padding-right: 10vw;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#colorSong:hover + #colorSongHidden {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+}
+
+#belvedereHidden {
+  width: 20vw;
+  height: 20vw;
+  display: none;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#parkMusicHidden {
+  width: 20vw;
+  height: 20vw;
+  display: none;
+  position: absolute;
+  padding-left: 60vw;
+  padding-right: 10vw;
+  top: 0;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#parkMusic:hover + #parkMusicHidden {
+  cursor: pointer;
+  display: block;
+  position: absolute;
+}
 
 .collapsibleM {
   height: 15vh;
@@ -129,39 +230,37 @@ p {
   font-family: 'IM Fell DW Pica', serif;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active {
-  color: #9fdf9f;
+  color: #009900;
   font-style: italic;
   background-color: transparent;
 }
 
 .collapsibleM:hover {
-  color: #9fdf9f;
+  color: #009900;
   background-color: transparent;
 }
 
 .collapsibleT:hover {
-  color: #79d279;
+  color: #009900;
   background-color: transparent;
 }
 
 .collapsibleS:hover {
-  color: #53c653;
+  color: #009900;
   background-color: transparent;
 }
 
 .collapsibleHaim:hover {
-  color: #39ac39;
+  color: #009900;
   background-color: transparent;
 }
 
 .collapsibleK:hover {
-  color: #2d862d;
+  color: #009900;
   background-color: transparent;
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 5px;
   line-height:
@@ -169,4 +268,12 @@ p {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 667px) {
+  .selectedWorks {
+    margin-top: 15vh;
+  }
 }

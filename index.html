@@ -10,63 +10,86 @@
   </head>
   <body>
 
-    <div class="header">
-      <img src="./Media/helvetica.png" alt="JACK HALLENBECK">
+    <div>
+      <img id="bee" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/160783/astroboy.png"   />
     </div>
+
+    <div class="header">
+      <img id="jack" src="./Media/helvetica.png" alt="JACK HALLENBECK">
+    </div>
+
+
 
     <div data-aos="fade-up"
      data-aos-duration="3000" class="selectedWorks">
 
       <button type="button" class="collapsibleM">Maggie Rogers</button>
         <div class="content">
-          <p>Say It  —  <em>Heard It In A Past Life</em> (2019)
+          <p id="sayIt">Say It  —  <em>Heard It In A Past Life</em> (2019)
           <br>
           Producer, songwriter, engineer</p>
-          <p>Color Song  —  <em>Now That The Light Is Fading</em> (2017)
+          <img id="sayItHidden" src="Media/danal.jpeg" alt="">
+          <p id="colorSong">Color Song  —  <em>Now That The Light Is Fading</em> (2017)
           <br>
           Mixer</p>
+          <img id="colorSongHidden" src="Media/biglove.jpeg" alt="">
         </div>
 
       <button type="button" class="collapsibleT">Topaz Jones</button>
-          <div class="content">
-          <p>“Nectar” (2018) - Producer, songwriter, engineer, mixer
-          <br>
-          “Zoom” (2018) - Producer, songwriter, engineer, mixer</p>
-          </div>
+        <div class="content">
+          <p>Nectar (2018)
+            <br>Producer, songwriter, engineer, mixer
+          </p>
+          <p>Zoom (2018)
+            <br>Producer, songwriter, engineer, mixer</p>
+        </div>
 
       <button type="button" class="collapsibleS">Scott James</button>
           <div class="content">
-            <p>Bridge Vision (2019) - Producer, songwriter, engineer, mixer
-            <br>
-            W (2019) - Producer, engineer, mixer
-            <br>
-            Ballet (2019) - Producer, songwriter, engineer, mixer
-            <br>
-            Voice of Dog (2017) - Producer, songwriter, engineer, mixer
-            <br>
-            Belvedere - <em>Shelter Island Heights</em> (2017) - Producer, songwriter, engineer, mixer
-            <br>
-            Park Music - <em>Shelter Island Heights</em> (2017) - Producer, engineer, mixer</p>
-              </div>
+            <p>Bridge Vision (2019)
+              <br>Producer, songwriter, engineer, mixer
+            </p>
+            <p>W (2019)
+              <br>Producer, engineer, mixer
+            </p>
+            <p>Ballet (2019)
+              <br>Producer, songwriter, engineer, mixer
+            </p>
+            <p>Voice of Dog (2017)
+              <br>Producer, songwriter, engineer, mixer
+            </p>
+            <p id="belvedere" onmouseover="interval()">Belvedere  —  <em>Shelter Island Heights</em> (2017)
+              <br>Producer, songwriter, engineer, mixer
+            </p>
+            <div id="belvedereHidden">
+              <img src="Media/david.jpeg" alt="">
+            </div>
+            <p id="parkMusic">Park Music  —  <em>Shelter Island Heights</em> (2017)
+              <br>Producer, engineer, mixer</p>
+              <img id="parkMusicHidden" src="Media/lotto.jpeg" alt="">
+            </div>
 
-        <button type="button" class="collapsibleHaim">HAIM  —  “FUBT”</button>
+        <button type="button" class="collapsibleHaim">HAIM</button>
           <div class="content">
-            <p><em>Women in Music Pt. III</em> (2020)
+            <p>FUBT   —  <em>Women in Music Pt. III</em> (2020)
               <br>
               Synthesizer</p>
           </div>
 
         <button type="button" class="collapsibleK">Kate Rhudy</button>
           <div class="content">
-            <p>“Dance it Away” (2020)
+            <p>Dance it Away (2020)
             <br>
             Producer, engineer, mixer</p>
+            <p>Snake (2020)
+            <br> Producer, engineer, mixer
+            </p>
           </div>
 
     </div>
 
-    <div class="contact">
-      <button id="contact"><a href="mailto:jackhallenbeck@gmail.com"></a>Contact</button>
+    <div class="contact-container">
+      <button class="contact"><a href="mailto:jackhallenbeck@gmail.com"></a>Contact</button>
     </div>
 
 
